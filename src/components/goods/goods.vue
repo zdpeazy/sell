@@ -35,11 +35,13 @@
         </li>
       </ul>
     </div>
+    <shopcart></shopcart>
   </div>
 </template>
 
 <script>
   import BScroll from 'better-scroll';
+  import shopcart from '@/components/shopcart/shopcart';
 
   const ERR_OK = 0;
 
@@ -114,7 +116,8 @@
       }
     },
     components: {
-      BScroll
+      BScroll,
+      shopcart
     }
   };
 </script>
@@ -128,7 +131,7 @@
   position absolute  
   top 174px
   bottom 46px
-  width 100%  
+  width 100% 
   overflow hidden
   .menu-wrapper
     flex 0 0 80px
