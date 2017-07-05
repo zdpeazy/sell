@@ -12,6 +12,8 @@
 
 <script>
   import Vue from 'vue';
+  // 引入中央事件总线
+  import eventBus from '@/assets/eventBus';
 
   export default {
     props: {
@@ -33,6 +35,9 @@
         } else {
           this.food.count ++;
         }
+
+        // this.$dispatch('cart.add', event.target); vue2.0废除事件通过$emit派发
+        eventBus.$emit('cart.add', event.target);
         // console.log(this.food.count);
       },
       decreaseCart(event) {
