@@ -16,6 +16,13 @@
          {{payDesc}}
         </div>
       </div>
+      <transition name="drop">
+        <div class="ball-container">
+          <div v-for="ball in balls" v-show="ball.show" class="ball">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -26,12 +33,7 @@
       selectFoods: {
         type: Array,
         default() {
-          return [
-            {
-              price: 11,
-              count: 1
-            }
-          ];
+          return [];
         }
       },
       deliveryPrice: {
@@ -42,6 +44,27 @@
         type: Number,
         default: 0
       }
+    },
+    data() {
+      return {
+        balls: [
+          {
+            show: false
+          },
+          {
+            show: false
+          },
+          {
+            show: false
+          },
+          {
+            show: false
+          },
+          {
+            show: false
+          }
+        ]
+      };
     },
     computed: {
       totalPrice() {
