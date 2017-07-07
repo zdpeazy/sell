@@ -16,13 +16,13 @@
          {{payDesc}}
         </div>
       </div>
-      <transition name="drop">
-        <div class="ball-container">
-          <div v-for="ball in balls" v-show="ball.show" class="ball">
+    </div>
+    <div class="ball-container">
+        <transition name="drop" v-for="ball in balls" :key="ball" @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
+          <div class="ball" v-show="ball.show">
             <div class="inner inner-hook"></div>
           </div>
-        </div>
-      </transition>
+        </transition>
     </div>
   </div>
 </template>
@@ -72,36 +72,46 @@
     },
     created() {
       eventBus.$on('cart.add', (el) => {
-        for (let i = 0; i < this.balls.length; i++) {
-          let ball = this.balls[i];
-          if (!ball.show) {
-            ball.show = true;
-            ball.el = el;
-            this.dropBalls.push(ball);
-            return;
-          }
-        }
+        // console.log(el);
+        this.drop(el);
       });
     },
     methods: {
-      beforeEnter(el) {
+      drop(el) {
+        // 触发一次事件就会将所有小球进行遍历 http://www.cnblogs.com/yuxingyoucan/p/7063881.html
+        for (let i = 0; i < this.balls.length; i++) {
+          let ball = this.balls[i];
+          if (!ball.show) { // 将false的小球放到dropBalls
+            ball.show = true;
+            ball.el = el;
+            this.dropBalls.push(ball);// 设置小球的el属性为一个dom对象
+            return;
+          }
+        }
+      },
+      // 小球动画的钩子
+      beforeEnter(el) { // 这个方法的执行是因为这是一个vue的监听事件
         let count = this.balls.length;
         while (count--) {
           let ball = this.balls[count];
           if (ball.show) {
-            let rect = ball.el.getBoundingClientReact();
+            console.log(ball.el);
+            let rect = ball.el.getBoundingClientRect(); // 获取小球的相对于视口的位移(小球高度)
+            console.log(rect);
             let x = rect.left - 32;
-            let y = -(window.innerHeight - rect.top - 22);
-            el.style.display = '';
+            let y = -(window.innerHeight - rect.top - 22); // 负数,因为是从左上角往下的的方向
+            console.log(y);
+            el.style.display = ''; // 清空display
             el.style.webkitTransform = `translate3d(0, ${y}px, 0)`;
             el.style.transform = `translate3d(0, ${y}px, 0)`;
-            let inner = el.getElementsByClassName('inner-hook')[0];
+            // 处理内层动画
+            let inner = el.getElementsByClassName('inner-hook')[0]; // 使用inner-hook类来单纯被js操作
             inner.style.webkitTransform = `translate3d(${x}px, 0, 0)`;
             inner.style.transform = `translate3d(${x}px, 0, 0)`;
           };
         };
       },
-      enter(el) {
+      enter(el, done) { // 这个方法的执行是因为这是一个vue的监听事件
         /* eslint-disable no-unused-vars */
         let rf = el.offsetHeight;
         this.$nextTick(() => {
@@ -110,13 +120,14 @@
           let inner = el.getElementsByClassName('inner-hook')[0];
           inner.style.webkitTransform = 'translate3d(0, 0, 0)';
           inner.style.transform = 'translate3d(0, 0, 0)';
+          el.addEventListener('transitionend', done); // Vue为了知道过渡的完成，必须设置相应的事件监听器
         });
       },
       afterEnter(el) {
-        let ball = this.dropBalls.shift();
+        let ball = this.dropBalls.shift(); // 完成一次动画就删除一个dropBalls的小球
         if (ball) {
           ball.show = false;
-          el.style.display = 'none';
+          el.style.display = 'none'; // 隐藏小球
         };
       }
     },
