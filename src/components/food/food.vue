@@ -58,6 +58,7 @@
 
 <script>
   import BScroll from 'better-scroll';
+  import {formatDate} from '@/common/js/date';
   import Vue from 'vue';
   // 引入中央事件总线
   import eventBus from '@/assets/eventBus';
@@ -140,12 +141,12 @@
         }
       }
     },
-    /* filters: {
+    filters: {
       formatDate(time) {
         let date = new Date(time);
         return formatDate(date, 'yyyy-MM-dd hh:mm');
       }
-    }, */
+    },
     components: {
       BScroll,
       cartcontrol,
