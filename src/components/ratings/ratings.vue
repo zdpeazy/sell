@@ -63,6 +63,8 @@
   // 引入中央事件总线
   import eventBus from '@/assets/eventBus';
 
+  import {config} from '@/common/js/config';
+
   const ALL = 2;
   const ERR_OK = 0;
 	export default {
@@ -84,7 +86,7 @@
       };
     },
     created() {
-      this.$http.get('/api/ratings').then((response) => {
+      this.$http.get(config().URL + '/api/ratings').then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {
           this.ratings = response.data;

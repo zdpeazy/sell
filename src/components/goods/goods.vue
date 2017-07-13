@@ -49,6 +49,8 @@
   import cartcontrol from '@/components/cartcontrol/cartcontrol';
   import food from '@/components/food/food';
 
+  import {config} from '@/common/js/config';
+
   const ERR_OK = 0;
 
   export default {
@@ -90,7 +92,7 @@
     },
     created() {
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
-      this.$http.get('/api/goods').then((response) => {
+      this.$http.get(config().URL + '/api/goods').then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {
           this.goods = response.data;
