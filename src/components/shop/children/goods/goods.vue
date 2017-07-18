@@ -45,11 +45,11 @@
 
 <script>
   import BScroll from 'better-scroll';
-  import shopcart from '@/components/shopcart/shopcart';
-  import cartcontrol from '@/components/cartcontrol/cartcontrol';
-  import food from '@/components/food/food';
+  import shopcart from '@/components/shop/children/shopcart/shopcart';
+  import cartcontrol from '@/components/shop/children/cartcontrol/cartcontrol';
+  import food from '@/components/shop/children/food/food';
 
-  import {config} from '@/common/js/config';
+  import {config} from '@/static/js/config';
 
   const ERR_OK = 0;
 
@@ -154,7 +154,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
 
-@import "../../common/stylus/mixin";
+@import "../../../../static/stylus/mixin";
  
 .goods
   display flex

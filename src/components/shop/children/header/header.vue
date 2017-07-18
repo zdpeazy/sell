@@ -29,6 +29,7 @@
     <div class="background">
       <img width="100%" height="auto" :src="seller.avatar" alt="">
     </div>
+    <navback></navback>
     <transition name="fade">
       <div v-show="detailShow" class="detail">
         <div class="detail-wrapper clearfix">
@@ -68,7 +69,8 @@
 
 <script>
 
-  import star from '@/components/star/star';
+  import star from '@/components/common/star/star';
+  import navback from '@/components/common/navback/navback';
 
 	export default {
 		props: {
@@ -93,14 +95,15 @@
 			this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
 		},
     components: {
-      star
+      star,
+      navback
     }
 	};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
 
-@import "../../common/stylus/mixin";
+@import "../../../../static/stylus/mixin";
 
 .header
   position relative

@@ -58,13 +58,13 @@
 
 <script>
   import BScroll from 'better-scroll';
-  import {formatDate} from '@/common/js/date';
+  import {formatDate} from '@/static/js/date';
   import Vue from 'vue';
   // 引入中央事件总线
   import eventBus from '@/assets/eventBus';
-  import cartcontrol from '@/components/cartcontrol/cartcontrol';
-  import split from '@/components/split/split';
-  import ratingselect from '@/components/ratingselect/ratingselect';
+  import cartcontrol from '@/components/shop/children/cartcontrol/cartcontrol';
+  import split from '@/components/common/split/split';
+  import ratingselect from '@/components/shop/children/ratingselect/ratingselect';
 
   // const POSITIVE = 0;
   // const NEGATIVE = 1;
@@ -159,7 +159,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
 
-  @import '../../common/stylus/mixin.styl';
+  @import '../../../../static/stylus/mixin';
   
   .food
     position fixed

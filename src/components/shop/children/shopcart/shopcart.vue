@@ -57,7 +57,7 @@
   // 引入中央事件总线
   import eventBus from '@/assets/eventBus';
   import BScroll from 'better-scroll';
-  import cartcontrol from '@/components/cartcontrol/cartcontrol';
+  import cartcontrol from '@/components/shop/children/cartcontrol/cartcontrol';
 
   export default {
     props: {
@@ -236,7 +236,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../common/stylus/mixin.styl";
+  @import "../../../../static/stylus/mixin.styl";
 
   .shopcart
     position fixed

@@ -70,9 +70,9 @@
 
 <script>
   import BScroll from 'better-scroll';
-  import star from '@/components/star/star';
-  import split from '@/components/split/split';
-  import {saveToLocal, loadFromLocal} from '@/common/js/store';
+  import star from '@/components/common/star/star';
+  import split from '@/components/common/split/split';
+  import {saveToLocal, loadFromLocal} from '@/static/js/store';
 
   export default {
     props: {
@@ -153,7 +153,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
 
-@import '../../common/stylus/mixin.styl';
+@import '../../../../static/stylus/mixin.styl';
 .seller
   position absolute
   top 174px

@@ -1,32 +1,41 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import goods from '@/components/goods/goods';
-import ratings from '@/components/ratings/ratings';
-import seller from '@/components/seller/seller';
+import home from '@/components/home/home';
+import shop from '@/components/shop/shop';
+import goods from '@/components/shop/children/goods/goods';
+import ratings from '@/components/shop/children/ratings/ratings';
+import seller from '@/components/shop/children/seller/seller';
+
 
 Vue.use(VueRouter);
 
 export default new VueRouter({
   routes: [
     {
-      path: '/goods',
-      name: 'goods',
-      component: goods
-    },
-    // router重定向
-    {
       path: '/',
-      redirect: { name: 'goods' }
+      name: 'home',
+      component: home
     },
     {
-      path: '/ratings',
-      name: 'ratings',
-      component: ratings
-    },
-    {
-      path: '/seller',
-      name: 'seller',
-      component: seller
+      path: '/shop',
+      name: 'shop',
+      component: shop,
+      children: [{
+        path: '/goods',
+        name: 'goods',
+        component: goods
+      }, {
+        path: '/ratings',
+        name: 'ratings',
+        component: ratings
+      }, {
+        path: '/seller',
+        name: 'seller',
+        component: seller
+      }, {
+        path: '/',
+        redirect: { name: 'goods' }
+      }]
     }
   ],
   linkActiveClass: 'active'

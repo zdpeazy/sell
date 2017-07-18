@@ -18,7 +18,31 @@ var seller = appData.seller;
 var goods = appData.goods;
 var ratings = appData.ratings;
 
+//首页接口
+var appData = require("./category.json");
+var category = appData.category;
+
+var appData = require("./index.json");
+var restaurants = appData.restaurants;
+
+
 var apiRoutes = express.Router();
+
+apiRoutes.get('/category',function(req, res) {
+  res.json({
+    errno: 0,
+    data: category 
+  }) 
+})
+
+apiRoutes.get('/restaurants',function(req, res) {
+  res.json({
+    errno: 0,
+    data: restaurants 
+  }) 
+})
+
+
 apiRoutes.get('/seller',function(req, res) {
   res.json({
     errno: 0,

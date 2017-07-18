@@ -56,14 +56,14 @@
 
 <script>
   import BScroll from 'better-scroll';
-  import {formatDate} from '@/common/js/date';
-  import star from '@/components/star/star';
-  import split from '@/components/split/split';
-  import ratingselect from '@/components/ratingselect/ratingselect';
+  import {formatDate} from '@/static/js/date';
+  import star from '@/components/common/star/star';
+  import split from '@/components/common/split/split';
+  import ratingselect from '@/components/shop/children/ratingselect/ratingselect';
   // 引入中央事件总线
   import eventBus from '@/assets/eventBus';
 
-  import {config} from '@/common/js/config';
+  import {config} from '@/static/js/config';
 
   const ALL = 2;
   const ERR_OK = 0;
@@ -145,7 +145,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-@import '../../common/stylus/mixin.styl';
+@import '../../../../static/stylus/mixin.styl';
 .ratings
   position absolute
   top 174px

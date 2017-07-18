@@ -44,7 +44,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
 
-  @import "../../common/stylus/mixin.styl";
+  @import "../../../static/stylus/mixin.styl";
 
   .star
     font-size 0
