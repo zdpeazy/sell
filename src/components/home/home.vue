@@ -1,24 +1,21 @@
 <template>
   <div class="home">
-    <router-link v-show="showShop" @click="homehide" to="/shop">商品详情</router-link>
+    <footerWrapper></footerWrapper>
   </div>
 </template>
 
 <script>
+  import footerWrapper from '@/components/common/footer/footer';
+
   export default {
-    data() {
-      return {
-        showShop: true,
-      };
-    },
-    methods: {
-      homehide() {
-        console.log(this.showShop);
-        this.showShop = false;
-      }
+    components: {
+      footerWrapper
     }
-  }
+  };
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+.home
+  width 100%
+  height 100%
 </style>
