@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    
+  <div class="category">
+    分类
   </div>
 </template>
 
