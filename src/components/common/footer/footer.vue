@@ -52,7 +52,6 @@
 <script>
   // $route.path.indexOf('search') 当前路径中包含search
   export default {
-    
   };
 </script>
 

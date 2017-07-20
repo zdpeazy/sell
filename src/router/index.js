@@ -9,7 +9,6 @@ import goods from '@/components/shop/children/goods/goods';
 import ratings from '@/components/shop/children/ratings/ratings';
 import seller from '@/components/shop/children/seller/seller';
 
-
 Vue.use(VueRouter);
 
 export default new VueRouter({

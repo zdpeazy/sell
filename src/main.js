@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from '@/App';
 import router from '@/router/index';
 import VueResource from 'vue-resource';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 import '@/static/stylus/index.styl';
 
@@ -11,6 +12,7 @@ Vue.config.productionTip = false;
 
 let app = Vue.extend(App);
 Vue.use(VueResource);
+Vue.use(VueAwesomeSwiper);
 
 new Vue({
   router,

@@ -31,6 +31,7 @@
         <img alt="天气图标" class="temperatureIcon" src="//fuss10.elemecdn.com/9/b9/c8e482821be2080edcffbb3a8d376png.png?imageMogr/format/webp/thumbnail/!69x69r/gravity/Center/crop/69x69/">
       </aside>
     </div>
+    <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="searchbox">
   </div>
 </template>
 
@@ -81,4 +82,11 @@
         margin-left 4px
         width 28px
         height 28px  
+  .searchbox
+    width 100%
+    height 36px
+    border-radius 36px
+    margin 8px 0
+    text-align center
+    box-shadow 0 1px 3px rgba(0,0,0,.2)
 </style>
