@@ -28,7 +28,7 @@
           <h2 class="temperature">33°</h2>
           <p>晴天</p>
         </div>
-        <img alt="天气图标" class="temperatureIcon" src="//fuss10.elemecdn.com/9/b9/c8e482821be2080edcffbb3a8d376png.png?imageMogr/format/webp/thumbnail/!69x69r/gravity/Center/crop/69x69/">
+        <img alt="天气图标" class="temperatureIcon" src="http://fuss10.elemecdn.com/9/b9/c8e482821be2080edcffbb3a8d376png.png">
       </aside>
     </div>
     <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="searchbox">
