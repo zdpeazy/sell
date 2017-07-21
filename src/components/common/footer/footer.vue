@@ -21,9 +21,9 @@
 
         </defs>
       </svg>
-      <router-link class="footerTab" to="/home">
+      <router-link class="footerTab" to="/msite">
         <svg class="footerTabIcon">
-            <use :xlink:href="$route.path.indexOf('home') !== -1? '#msiteActive' : '#msite'"></use>
+            <use :xlink:href="$route.path.indexOf('msite') !== -1? '#msiteActive' : '#msite'"></use>
         </svg>
         <span class="text">外卖</span>
       </router-link>

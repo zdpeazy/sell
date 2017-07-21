@@ -13,7 +13,7 @@
          <path d="M5.588 6.588c.78.78 2.04.784 2.824 0l5.176-5.176c.78-.78.517-1.412-.582-1.412H.994C-.107 0-.372.628.412 1.412l5.176 5.176z"/>  
       </symbol>    
     </svg>
-    <div class="header">
+    <div class="index-header">
       <div class="location">
         <svg class="locationIcon">
           <use xlink:href="#location"></use>
@@ -31,7 +31,7 @@
         <img alt="天气图标" class="temperatureIcon" src="http://fuss10.elemecdn.com/9/b9/c8e482821be2080edcffbb3a8d376png.png">
       </aside>
     </div>
-    <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="searchbox">
+    <input type="text" placeholder="输入商家、商品名称" aria-label="搜索商家、商品" class="searchbox">
   </div>
 </template>
 
@@ -44,7 +44,7 @@
 .headerwrapper
   padding 10px
   background-image linear-gradient(90deg,#0af,#0085ff) 
-  .header
+  .index-header
     display flex
     box-align center
     align-items center
@@ -85,8 +85,9 @@
   .searchbox
     width 100%
     height 36px
-    border-radius 36px
     margin 8px 0
     text-align center
+    border-radius 5px
     box-shadow 0 1px 3px rgba(0,0,0,.2)
+    font-size 14px
 </style>

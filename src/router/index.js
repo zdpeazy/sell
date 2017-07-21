@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import home from '@/components/home/home';
+import msite from '@/components/msite/msite';
 import discover from '@/components/discover/discover';
 import order from '@/components/order/order';
 import profile from '@/components/profile/profile';
@@ -14,28 +14,32 @@ Vue.use(VueRouter);
 export default new VueRouter({
   routes: [
     {
-      path: '/home',
-      name: 'home',
-      component: home
+      path: '/msite',
+      name: 'msite',
+      component: msite,
+      meta: { keepAlive: true } // 设置路由页面不刷新
     },
     {
       path: '/',
-      redirect: { name: 'home' }
+      redirect: { name: 'msite' }
     },
     {
       path: '/discover',
       name: 'discover',
-      component: discover
+      component: discover,
+      meta: { keepAlive: true }
     },
     {
       path: '/order',
       name: 'order',
-      component: order
+      component: order,
+      meta: { keepAlive: true }
     },
     {
       path: '/profile',
       name: 'profile',
-      component: profile
+      component: profile,
+      meta: { keepAlive: true }
     },
     {
       path: '/shop',
