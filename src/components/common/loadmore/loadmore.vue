@@ -1,137 +1,58 @@
 <template>
-    <div ref="wrapper">
-        <slot></slot>
-    </div>
+  <div class="loadmore" :style="{'height':this.loadingHei+'px','lineHeight':this.loadingHei+'px'}">
+    <svg style="display: none;position:absolute;width:0;height:0">  
+      <!-- 加载进度条 -->
+      <symbol id="loading" viewBox="0 0 64 64">  
+         <path d="M60 36h-8c-2.203 0-4-1.797-4-4 0-2.208 1.797-4 4-4h8c2.203 0 4 1.792 4 4 0 2.203-1.797 4-4 4zM48.973 20.686a4 4 0 0 1-5.66 0 3.995 3.995 0 0 1 0-5.655l5.66-5.653a3.99 3.99 0 0 1 5.65 0 4 4 0 0 1 0 5.655l-5.65 5.656zM32 64a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4c2.203 0 4 1.797 4 4v8c0 2.203-1.797 4-4 4zm0-48a4 4 0 0 1-4-4V4a4 4 0 1 1 8 0v8c0 2.208-1.797 4-4 4zM15.03 54.624a3.995 3.995 0 0 1-5.654 0 3.99 3.99 0 0 1 0-5.65l5.655-5.66a3.995 3.995 0 0 1 5.657 0 4.004 4.004 0 0 1 0 5.66l-5.655 5.65zm0-33.938L9.373 15.03a3.995 3.995 0 0 1 0-5.654 4 4 0 0 1 5.654 0l5.655 5.655a3.995 3.995 0 0 1 0 5.657 3.99 3.99 0 0 1-5.65 0zM16 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4 4 4 0 0 1 4-4h8a4 4 0 0 1 4 4zm32.973 11.314l5.65 5.66a3.99 3.99 0 0 1 0 5.65 3.992 3.992 0 0 1-5.65 0l-5.66-5.65a4 4 0 0 1 0-5.66 4 4 0 0 1 5.66 0z"/>  
+      </symbol>
+    </svg>
+    <svg class="loading-icon">
+      <use xlink:href="#loading"></use>
+    </svg>
+    <span>{{this.loadText}}</span>
+  </div>
 </template>
 
 <script>
-  import BScroll from 'better-scroll';
-
   export default {
     props: {
-      /* 1 滚动的时候会派发scroll事件，会截流。
-         2 滚动的时候实时派发scroll事件，不会截流。
-         3 除了实时派发scroll事件，在swipe的情况下仍然能实时派发scroll事件 */
-      probeType: {
+      loadingHei: {
         type: Number,
-        default: 1
+        default: 50
       },
-      // 点击列表是否派发click事件
-      click: {
-        type: Boolean,
-        default: true
+      scroll: {
+        type: Object
       },
-      // 是否开启横向滚动
-      scrollX: {
-        type: Boolean,
-        default: false
-      },
-      // 是否派发滚动事件
-      listenScroll: {
-        type: Boolean,
-        default: false
-      },
-      // 列表的数据
-      data: {
-        type: Array,
-        default: null
-      },
-      /* 是否派发滚动到底部的事件，用于上拉加载 */
-      pullup: {
-        type: Boolean,
-        default: false
-      },
-      /* 是否派发顶部下拉的事件，用于下拉刷新 */
-      pulldown: {
-        type: Boolean,
-        default: false
-      },
-      /* 是否派发列表滚动开始的事件 */
-      beforeScroll: {
-        type: Boolean,
-        default: false
-      },
-      // 当数据更新后，刷新scroll的延时
-      refreshDelay: {
-        type: Number,
-        default: 20
-      }
-    },
-    mounted() {
-      // 保证在DOM渲染完毕后初始化better-scroll
-      setTimeout(() => {
-        this._initScroll();
-      }, 20);
-    },
-    methods: {
-      _initScroll() {
-        if (!this.$refs.wrapper) {
-          return;
-        }
-        // better-scroll的初始化
-        this.scroll = new BScroll(this.$refs.wrapper, {
-          probeType: this.probeType,
-          click: this.click,
-          scrollX: this.scrollX
-        });
-        // 是否派发滚动事件
-        if (this.listenScroll) {
-          let me = this;
-          this.scroll.on('scroll', (pos) => {
-            me.$emit('scroll', pos);
-          });
-        }
-        // 是否派发滚动到底部事件，用于上拉加载
-        if (this.pullup) {
-          this.scroll.on('scrollEnd', () => { // 滚动到底部
-            if (this.scroll.y <= (this.scroll.maxScrollY + 50)) {
-              this.$emit('scrollToEnd');
-            }
-          });
-        }
-        // 是否派发顶部下拉事件，用于下拉刷新
-        if (this.pulldown) {
-          this.scroll.on('touchend', (pos) => { // 下拉动作
-            if (pos.y > 50) {
-              this.$emit('pulldown');
-            }
-          });
-        }
-        // 是否派发列表滚动开始的事件
-        if (this.beforeScroll) {
-          this.scroll.on('beforeScrollStart', () => {
-            this.$emit('beforeScroll');
-          });
-        }
-      },
-      disable() {
-        // 代理better-scroll的disable方法
-        this.scroll && this.scroll.disable();
-      },
-      enable() {
-        // 代理better-scroll的enable方法
-        this.scroll && this.scroll.enable();
-      },
-      refresh() {
-        // 代理better-scroll的refresh方法
-        this.scroll && this.scroll.refresh();
-      },
-      scrollTo() {
-        // 代理better-scroll的scrollTo方法
-        this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments);
-      },
-      scrollToElement() {
-        // 代理better-scroll的scrollToElement方法
-        this.scroll && this.scroll.scrollToElement.apply(this.scroll, arguments);
-      }
-    },
-    watch: {
-      // 监听数据的变化，延时refreshDelay时间后调用refresh方法重新计算，保证滚动效果正常
-      data() {
-        setTimeout(() => {
-          this.refresh();
-        }, this.refreshDelay);
+      loadText: {
+        type: String,
+        default: '正在加载...'
       }
     }
   };
 </script>
+
+<style lang="stylus" rel="stylesheet/stylus">
+.loadmore
+  width 100%
+  border-top 1px solid #eee
+  font-size 14px
+  display flex
+  box-align center
+  align-items center
+  box-pack center
+  justify-content center
+  .loading-icon
+    display block
+    width 20px
+    height 20px
+    fill #666
+    margin-right 5px
+    transform-origin: 50% 50%;
+    animation LoadMore-loading 1s linear infinite
+    @keyframes LoadMore-loading
+      from
+        transform:rotate(0deg)
+      to
+        transform:rotate(1turn)
+    
+</style>

@@ -1,0 +1,1895 @@
+{
+  "restaurants" : [
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "description": "7折专享，饿了么回味经典桶",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38044287,
+                "name": "7折专享，饿了么回味经典桶",
+                "tips": "7折专享，饿了么回味经典桶"
+            },
+            {
+                "description": "一分新享套餐，饿了么新用户专享",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38037001,
+                "name": "一分新享套餐，饿了么新用户专享",
+                "tips": "一分新享套餐，饿了么新用户专享"
+            }
+        ],
+        "address": "北京市朝阳区百子湾路12号大成国际中心1号楼",
+        "authentic_id": 8371227142192052,
+        "average_cost": "¥52/人",
+        "description": "KFC",
+        "distance": 540,
+        "favored": false,
+        "float_delivery_fee": 9,
+        "float_minimum_order_amount": 0,
+        "id": 257552,
+        "image_path": "7d348a777a6b444dc317cc24d101220cjpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.9004463,
+        "longitude": 116.4922463,
+        "max_applied_quantity_per_order": -1,
+        "name": "肯德基宅急送（百子湾店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/21:55"
+        ],
+        "order_lead_time": 40,
+        "phone": "4009208801",
+        "piecewise_agent_fee": {
+            "description": "配送费¥9",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 9,
+                    "price": 0
+                }
+            ],
+            "tips": "配送费¥9"
+        },
+        "promotion_info": "本餐厅不使用饿了么配送，由肯德基宅急送官方品牌配送，会员用户无法享受免配送费服务",
+        "rating": 4.7,
+        "rating_count": 526,
+        "recent_order_num": 1074,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"60\": {\"1\": 30, \"0\": 0}, \"30\": {\"1\": 15, \"0\": 0}, \"95\": {\"1\": 40, \"0\": 0}}",
+                "description": "满30减15，满60减30，满95减40",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38299846,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满30减15，满60减30，满95减40",
+                "type": 102
+            },
+            {
+                "attribute": "{\"25.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u4e00\\u4efd\\u996e\\u54c1\"}, \"50.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u4e24\\u4efd\\u996e\\u54c1\"}}",
+                "description": "满25.0元赠送一份饮品1份，满50.0元赠送两份饮品1份",
+                "icon_color": "3cc791",
+                "icon_name": "赠",
+                "id": 38681054,
+                "is_exclusive_with_food_activity": true,
+                "name": "满赠优惠",
+                "tips": "满25.0元赠送一份饮品1份，满50.0元赠送两份饮品1份",
+                "type": 106
+            },
+            {
+                "description": "29.9元让你吃到饱！",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37363700,
+                "name": "29.9元让你吃到饱！",
+                "tips": "29.9元让你吃到饱！"
+            },
+            {
+                "description": "酸豆角肉沫炒饭9.9元特价",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37363347,
+                "name": "酸豆角肉沫炒饭9.9元特价",
+                "tips": "酸豆角肉沫炒饭9.9元特价"
+            },
+            {
+                "description": "农家小炒肉19.9特价",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37363103,
+                "name": "农家小炒肉19.9特价",
+                "tips": "农家小炒肉19.9特价"
+            },
+            {
+                "description": "酸菜鱼39.9元！酸爽一夏！",
+                "icon_color": "f1884f",
+                "icon_name": "爽",
+                "id": 37362637,
+                "name": "酸菜鱼39.9元！酸爽一夏！",
+                "tips": "酸菜鱼39.9元！酸爽一夏！"
+            },
+            {
+                "description": "大鸭梨烤鸭一份32.9请你吃！",
+                "icon_color": "f1884f",
+                "icon_name": "惠",
+                "id": 37361837,
+                "name": "大鸭梨烤鸭一份32.9请你吃！",
+                "tips": "大鸭梨烤鸭一份32.9请你吃！"
+            },
+            {
+                "description": "19.9元木须肉限时抢购",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37361488,
+                "name": "19.9元木须肉限时抢购",
+                "tips": "19.9元木须肉限时抢购"
+            },
+            {
+                "description": "招牌独享！！大鸭梨烤鸭五折独家奉献！",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 32675490,
+                "name": "招牌独享！！大鸭梨烤鸭五折独家奉献！",
+                "tips": "招牌独享！！大鸭梨烤鸭五折独家奉献！"
+            },
+            {
+                "description": "品质美食特价放送",
+                "icon_color": "f1884f",
+                "icon_name": "惠",
+                "id": 32546396,
+                "name": "品质美食特价放送",
+                "tips": "品质美食特价放送"
+            },
+            {
+                "description": "精选折扣菜套餐，不与满减同享",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32563933,
+                "name": "精选折扣菜套餐，不与满减同享",
+                "tips": "精选折扣菜套餐，不与满减同享"
+            },
+            {
+                "description": "大鸭梨特价菜品9.9元",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32530615,
+                "name": "大鸭梨特价菜品9.9元",
+                "tips": "大鸭梨特价菜品9.9元"
+            },
+            {
+                "description": "红烧茄子套餐特价16.9",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32564016,
+                "name": "红烧茄子套餐特价16.9",
+                "tips": "红烧茄子套餐特价16.9"
+            }
+        ],
+        "address": "北京市朝阳区百子湾路甲16号国锐易购空间1号楼",
+        "authentic_id": 7341237141548693,
+        "average_cost": "¥25/人",
+        "closing_count_down": 0,
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "欢迎光临！",
+        "distance": 1475,
+        "favored": false,
+        "float_delivery_fee": 5,
+        "float_minimum_order_amount": 20,
+        "id": 662693,
+        "image_path": "5f540633a08f1d7811b15614d367a12bjpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.900317,
+        "longitude": 116.480929,
+        "max_applied_quantity_per_order": -1,
+        "name": "大鸭梨烤鸭（百子湾店）",
+        "next_business_time": "10:30",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:30/14:10",
+            "17:40/21:50"
+        ],
+        "order_lead_time": 32,
+        "phone": "87745755",
+        "piecewise_agent_fee": {
+            "description": "配送费¥5",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 5,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥5"
+        },
+        "promotion_info": "",
+        "rating": 4.6,
+        "rating_count": 0,
+        "recent_order_num": 2783,
+        "regular_customer_count": 0,
+        "status": 5,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "23.0",
+                "description": "新用户下单立减23.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 38723422,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减23.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"25\": {\"1\": 12, \"0\": 0}, \"50\": {\"1\": 20, \"0\": 0}, \"100\": {\"1\": 40, \"0\": 0}}",
+                "description": "满25减12，满50减20，满100减40",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38723421,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满25减12，满50减20，满100减40",
+                "type": 102
+            },
+            {
+                "attribute": "{\"25.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u996e\\u6599\"}, \"50.0\": {\"quantity\": 2, \"must_pay_online\": 1, \"name\": \"\\u996e\\u6599\"}}",
+                "description": "满25.0元赠送饮料1份，满50.0元赠送饮料2份",
+                "icon_color": "3cc791",
+                "icon_name": "赠",
+                "id": 34220460,
+                "is_exclusive_with_food_activity": true,
+                "name": "满赠优惠",
+                "tips": "满25.0元赠送饮料1份，满50.0元赠送饮料2份",
+                "type": 106
+            }
+        ],
+        "address": "北京市朝阳区百子湾西里403号楼地下1层–01",
+        "authentic_id": 1311297141013698,
+        "average_cost": "¥13/人",
+        "bidding": "{\"core\":{\"index\":17,\"target\":{\"restaurantId\":156035198,\"weight\":150,\"probability\":150000.171875},\"come_from\":1,\"next\":{\"restaurantId\":156710723,\"weight\":110,\"probability\":110000.203125}}}",
+        "description": "本店是正规店，手续齐全，可开发票，请放心用餐！",
+        "distance": 477,
+        "favored": false,
+        "float_delivery_fee": 3,
+        "float_minimum_order_amount": 20,
+        "id": 156035198,
+        "image_path": "680febfb13699821853b5b5bdf644ae3jpeg",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.894752,
+        "longitude": 116.495404,
+        "max_applied_quantity_per_order": -1,
+        "name": "卤小厨私房菜",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "08:30/20:30"
+        ],
+        "order_lead_time": 24,
+        "phone": "18211141173",
+        "piecewise_agent_fee": {
+            "description": "配送费¥3",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 3,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥3"
+        },
+        "promotion_info": "家乡的味道！",
+        "rating": 4.4,
+        "rating_count": 0,
+        "recent_order_num": 208,
+        "recommend": {
+            "image_hash": "ff085f835038a87ae040a8cd53338f4cjpeg",
+            "reason": "广告",
+            "track": "{\"rankType\":\"8\"}"
+        },
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额100.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196980,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"60\": {\"1\": 26, \"0\": 0}, \"30\": {\"1\": 13, \"0\": 0}, \"15\": {\"1\": 9, \"0\": 0}}",
+                "description": "满15减9，满30减13，满60减26",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 37478493,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满15减9，满30减13，满60减26",
+                "type": 102
+            },
+            {
+                "attribute": "{\"25.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u4e00\\u4efd\\u996e\\u54c1\"}, \"50.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u4e24\\u4efd\\u996e\\u54c1\"}}",
+                "description": "满25.0元赠送一份饮品1份，满50.0元赠送两份饮品1份",
+                "icon_color": "3cc791",
+                "icon_name": "赠",
+                "id": 38681054,
+                "is_exclusive_with_food_activity": true,
+                "name": "满赠优惠",
+                "tips": "满25.0元赠送一份饮品1份，满50.0元赠送两份饮品1份",
+                "type": 106
+            },
+            {
+                "description": "9.9特价GetFun",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38156859,
+                "name": "9.9特价GetFun",
+                "tips": "9.9特价GetFun"
+            },
+            {
+                "description": "特价25元套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35937443,
+                "name": "特价25元套餐",
+                "tips": "特价25元套餐"
+            },
+            {
+                "description": "9.9元抢购",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35525674,
+                "name": "9.9元抢购",
+                "tips": "9.9元抢购"
+            },
+            {
+                "description": "新款7折",
+                "icon_color": "f07373",
+                "icon_name": "特",
+                "id": 33449306,
+                "name": "新款7折",
+                "tips": "新款7折"
+            },
+            {
+                "description": "不止五折",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32732582,
+                "name": "不止五折",
+                "tips": "不止五折"
+            }
+        ],
+        "address": "北京市北京市朝阳区北京市朝阳区高碑店乡半壁店村惠河南街1132号通惠大厦B1-C,B1-D房间",
+        "authentic_id": 4371297135239512,
+        "average_cost": "¥20/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "优粮生活成立以来坚持多种经营模式的融合，堂食以主题餐饮、特色菜品为主；外卖以美味、营养、安全和便捷为主。在不断健全质量管理体系的过程中，将品质监管视为企业生命，从选材、备料、加工、出餐到配送无不竭心尽力。真诚希望能为忙碌于事业与家庭的人们做点事，周旋于各种事务之余能享受更好的生活",
+        "distance": 1532,
+        "favored": false,
+        "float_delivery_fee": 3,
+        "float_minimum_order_amount": 20,
+        "id": 155151912,
+        "image_path": "ab10c43d8ad1fafb5b7e2176c70e1927png",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.903408,
+        "longitude": 116.51487,
+        "max_applied_quantity_per_order": -1,
+        "name": "优粮生活（高碑店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/20:00"
+        ],
+        "order_lead_time": 28,
+        "phone": "13717912214",
+        "piecewise_agent_fee": {
+            "description": "配送费¥3",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 3,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥3"
+        },
+        "promotion_info": "一：亲爱的客人，本公司食材全程冷链运输，新鲜并保证品质，让您的用餐有更高的体验和享受。 二：本店所有餐品标准化，不能根据您的特殊要求进行修改与调整，请选择适合您口味的菜品。三：公司热线：4006663080 感谢您的支持，祝您用餐愉快！",
+        "rating": 4.6,
+        "rating_count": 0,
+        "recent_order_num": 2223,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额200.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "33.0",
+                "description": "新用户下单立减33.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 38432453,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减33.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"50\": {\"1\": 30, \"0\": 0}, \"75\": {\"1\": 36, \"0\": 0}, \"20\": {\"1\": 17, \"0\": 0}}",
+                "description": "满20减17，满50减30，满75减36",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38192937,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满20减17，满50减30，满75减36",
+                "type": 102
+            },
+            {
+                "description": "猪脚饭9块9",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38215003,
+                "name": "猪脚饭9块9",
+                "tips": "猪脚饭9块9"
+            }
+        ],
+        "address": "北京市朝阳区百子湾西里403号楼104、105",
+        "authentic_id": 5371277137112123,
+        "average_cost": "¥13/人",
+        "bidding": "{\"core\":{\"index\":19,\"target\":{\"restaurantId\":156710723,\"weight\":110,\"probability\":110000.203125},\"come_from\":1,\"next\":{\"restaurantId\":156281318,\"weight\":120,\"probability\":120000.1796875}}}",
+        "description": "精选上等猪肘肉，名贵中药材小火卤制，肉烂汁多。",
+        "distance": 502,
+        "favored": false,
+        "float_delivery_fee": 3,
+        "float_minimum_order_amount": 0,
+        "id": 156710723,
+        "image_path": "8d4a24ed81ff4fbd0b5e69fa3df14bd8jpeg",
+        "is_new": true,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.894417,
+        "longitude": 116.495625,
+        "max_applied_quantity_per_order": -1,
+        "name": "正宗隆江猪脚饭",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "09:30/21:30"
+        ],
+        "order_lead_time": 40,
+        "phone": "17610502281",
+        "piecewise_agent_fee": {
+            "description": "配送费¥3",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 3,
+                    "price": 0
+                }
+            ],
+            "tips": "配送费¥3"
+        },
+        "promotion_info": "精选上等猪肘肉，名贵中药材小火卤制，肉烂汁多。",
+        "rating": 4.5,
+        "rating_count": 111,
+        "recent_order_num": 334,
+        "recommend": {
+            "image_hash": "ff085f835038a87ae040a8cd53338f4cjpeg",
+            "reason": "广告",
+            "track": "{\"rankType\":\"8\"}"
+        },
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "该商家支持开发票，开票订单金额150.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"40\": {\"1\": 22, \"0\": 0}, \"60\": {\"1\": 30, \"0\": 0}, \"20\": {\"1\": 16, \"0\": 0}}",
+                "description": "满20减16，满40减22，满60减30",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38499815,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满20减16，满40减22，满60减30",
+                "type": 102
+            },
+            {
+                "description": "5折特惠，限时抢购！",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 37697619,
+                "name": "5折特惠，限时抢购！",
+                "tips": "5折特惠，限时抢购！"
+            },
+            {
+                "description": "22.9元特惠套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37695754,
+                "name": "22.9元特惠套餐",
+                "tips": "22.9元特惠套餐"
+            }
+        ],
+        "address": "北京市朝阳区营盘沟路2号1层108室",
+        "authentic_id": 4341277145028830,
+        "average_cost": "¥18/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "高峰期请提前下单。客服电话(微信同号):17155416825 \n单次消费满200元可开发票(可累计)。因满减活动，小吃，饮料，汤请随餐购买，单独购买不给予配送，尽量谅解。",
+        "distance": 2221,
+        "favored": false,
+        "float_delivery_fee": 4,
+        "float_minimum_order_amount": 20,
+        "id": 1846330,
+        "image_path": "75dcb7827480428747d264099d8123cejpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.892237,
+        "longitude": 116.473353,
+        "max_applied_quantity_per_order": -1,
+        "name": "二十五块半（双井店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "09:30/21:00"
+        ],
+        "order_lead_time": 32,
+        "phone": "17155416825 18601254523",
+        "piecewise_agent_fee": {
+            "description": "配送费¥4",
+            "extra_fee": 1,
+            "is_extra": true,
+            "rules": [
+                {
+                    "fee": 4,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥4"
+        },
+        "promotion_info": "高峰期间，请您提前下单",
+        "rating": 4.7,
+        "rating_count": 0,
+        "recent_order_num": 6168,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额200.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"25\": {\"1\": 10, \"0\": 0}, \"50\": {\"1\": 16, \"0\": 0}, \"35\": {\"1\": 13, \"0\": 0}}",
+                "description": "满25减10，满35减13，满50减16",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38056368,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满25减10，满35减13，满50减16",
+                "type": 102
+            },
+            {
+                "description": "11.9特价菜",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 30189982,
+                "name": "11.9特价菜",
+                "tips": "11.9特价菜"
+            },
+            {
+                "description": "14.9特价菜",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 30190291,
+                "name": "14.9特价菜",
+                "tips": "14.9特价菜"
+            },
+            {
+                "description": "19.9特价菜",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 30190438,
+                "name": "19.9特价菜",
+                "tips": "19.9特价菜"
+            },
+            {
+                "description": "5折大牌餐",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 32215770,
+                "name": "5折大牌餐",
+                "tips": "5折大牌餐"
+            }
+        ],
+        "address": "北京市朝阳区高碑店乡半壁店村惠河南街1132号通惠大厦B1-C，B1-D房间",
+        "authentic_id": 3311267130591677,
+        "average_cost": "¥17/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "",
+        "distance": 1573,
+        "favored": false,
+        "float_delivery_fee": 3,
+        "float_minimum_order_amount": 20,
+        "id": 2118177,
+        "image_path": "6f3fbc8f122d562f3e9ccb817adf425apng",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.903699,
+        "longitude": 116.515237,
+        "max_applied_quantity_per_order": -1,
+        "name": "暖暖粥铺∙杂粮粥（四惠东店）",
+        "next_business_time": "16:00",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/14:00",
+            "16:00/20:00"
+        ],
+        "order_lead_time": 28,
+        "phone": "18210745867",
+        "piecewise_agent_fee": {
+            "description": "配送费¥3",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 3,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥3"
+        },
+        "promotion_info": "下雨天来碗暖暖粥，杂粮粥，小火慢熬，熬出养生杂粮粥。",
+        "rating": 4.6,
+        "rating_count": 0,
+        "recent_order_num": 2006,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额100.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"50\": {\"1\": 24, \"0\": 0}, \"29\": {\"1\": 20, \"0\": 0}, \"70\": {\"1\": 35, \"0\": 0}}",
+                "description": "满29减20，满50减24，满70减35",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38327284,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满29减20，满50减24，满70减35",
+                "type": 102
+            },
+            {
+                "description": "19.9清凉一夏套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38436191,
+                "name": "19.9清凉一夏套餐",
+                "tips": "19.9清凉一夏套餐"
+            },
+            {
+                "description": "五折下午茶，清凉一下～",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 38402477,
+                "name": "五折下午茶，清凉一下～",
+                "tips": "五折下午茶，清凉一下～"
+            },
+            {
+                "description": "五折新品，实惠到爆～",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 38401787,
+                "name": "五折新品，实惠到爆～",
+                "tips": "五折新品，实惠到爆～"
+            },
+            {
+                "description": "五折锦绣前程双人餐，共享美好时光～",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 38016439,
+                "name": "五折锦绣前程双人餐，共享美好时光～",
+                "tips": "五折锦绣前程双人餐，共享美好时光～"
+            },
+            {
+                "description": "36元双人套餐，美味齐分享～",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37597472,
+                "name": "36元双人套餐，美味齐分享～",
+                "tips": "36元双人套餐，美味齐分享～"
+            },
+            {
+                "description": "19元单人新品套餐，好吃～",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37596740,
+                "name": "19元单人新品套餐，好吃～",
+                "tips": "19元单人新品套餐，好吃～"
+            },
+            {
+                "description": "25.5美味套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32295495,
+                "name": "25.5美味套餐",
+                "tips": "25.5美味套餐"
+            }
+        ],
+        "address": "北京市朝阳区营盘沟路2号",
+        "authentic_id": 7351207133396220,
+        "average_cost": "¥15/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "PS：这几天骑手运力锐减，送餐时间多有延迟，平均送餐时间为56分钟，赶时间的宝宝请慎点！",
+        "distance": 2254,
+        "favored": false,
+        "float_delivery_fee": 6,
+        "float_minimum_order_amount": 20,
+        "id": 751620,
+        "image_path": "3e8c95b048d61e4e02040db09ba0e4b1jpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.892224,
+        "longitude": 116.472958,
+        "max_applied_quantity_per_order": -1,
+        "name": "台资味（北京双井店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/19:30"
+        ],
+        "order_lead_time": 29,
+        "phone": "01053659543 15311413033",
+        "piecewise_agent_fee": {
+            "description": "配送费¥6",
+            "extra_fee": 1,
+            "is_extra": true,
+            "rules": [
+                {
+                    "fee": 6,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥6"
+        },
+        "promotion_info": "本店支持饿了么网上订餐\n1、请确保您的电话畅通，以便送餐员能及时联系上您。\n2、为了不耽误您的用餐时间，请提前60分钟订餐。\n3、本餐厅支持开发票，开票订单金额200元起，发票开出需5个工作日，请在下单时填写好发票抬头。\n4、客服电话：15311413033\n谢谢！",
+        "rating": 4.5,
+        "rating_count": 0,
+        "recent_order_num": 1661,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196247,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"50\": {\"1\": 12, \"0\": 0}, \"28\": {\"1\": 8, \"0\": 0}, \"70\": {\"1\": 20, \"0\": 0}}",
+                "description": "满28减8，满50减12，满70减20",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38477501,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满28减8，满50减12，满70减20",
+                "type": 102
+            },
+            {
+                "description": "周年庆特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38077403,
+                "name": "周年庆特惠",
+                "tips": "周年庆特惠"
+            },
+            {
+                "description": "周年庆特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38077360,
+                "name": "周年庆特惠",
+                "tips": "周年庆特惠"
+            },
+            {
+                "description": "五折套餐，嗨不停",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 36180935,
+                "name": "五折套餐，嗨不停",
+                "tips": "五折套餐，嗨不停"
+            }
+        ],
+        "address": "北京市朝阳区高碑店乡半壁店村惠河南街1132号通惠大厦B1—C，B1—D房间",
+        "authentic_id": 8311297137090957,
+        "average_cost": "¥18/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "四有青年是四惠地区口碑、口味、环境领先的精品小吃快餐厅，位于通惠大厦美食城，主营地道的米粉和面。高品质的食材、秘制现熬的高汤、津市百年粉店第四代传人工艺，只为做出更好吃的粉和面！联手饿了么，6月特惠来袭！",
+        "distance": 1507,
+        "favored": false,
+        "float_delivery_fee": 5,
+        "float_minimum_order_amount": 20,
+        "id": 1548957,
+        "image_path": "92116265e7ba3d9cd4029b561ac6f1e7jpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.903278,
+        "longitude": 116.51462,
+        "max_applied_quantity_per_order": -1,
+        "name": "四有青年米粉•面（四惠店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/21:00"
+        ],
+        "order_lead_time": 25,
+        "phone": "13552677562",
+        "piecewise_agent_fee": {
+            "description": "配送费¥5",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 5,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥5"
+        },
+        "promotion_info": "望京口碑第一的米粉面馆登陆四惠地区，优选高品质食材，坚持无添加的工艺，做出更好的味道，为您提供更满意的服务！新店开业，特惠来袭！联系电话13552677562",
+        "rating": 4.7,
+        "rating_count": 0,
+        "recent_order_num": 2942,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额100.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+     {
+        "activities": [
+            {
+                "attribute": "23.0",
+                "description": "新用户下单立减23.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 37149018,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减23.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"25\": {\"1\": 15, \"0\": 0}, \"50\": {\"1\": 23, \"0\": 0}, \"38\": {\"1\": 18, \"0\": 0}}",
+                "description": "满25减15，满38减18，满50减23",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 36131175,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满25减15，满38减18，满50减23",
+                "type": 102
+            },
+            {
+                "description": "5折元气餐",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 38055628,
+                "name": "5折元气餐",
+                "tips": "5折元气餐"
+            }
+        ],
+        "address": "北京市朝阳区营盘沟路2号1层108室",
+        "authentic_id": 4311277138577518,
+        "average_cost": "¥14/人",
+        "bidding": "{\"core\":{\"index\":24,\"target\":{\"restaurantId\":156281318,\"weight\":120,\"probability\":120000.1796875},\"come_from\":1,\"next\":{\"restaurantId\":1798481,\"weight\":130,\"probability\":132000.15625}}}",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "",
+        "distance": 2129,
+        "favored": false,
+        "float_delivery_fee": 6,
+        "float_minimum_order_amount": 20,
+        "id": 156281318,
+        "image_path": "dc5b334c921a5812912ef55b59227080jpeg",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.892845,
+        "longitude": 116.474234,
+        "max_applied_quantity_per_order": -1,
+        "name": "川湘私厨",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "09:30/20:30"
+        ],
+        "order_lead_time": 34,
+        "phone": "18600825694",
+        "piecewise_agent_fee": {
+            "description": "配送费¥6",
+            "extra_fee": 1,
+            "is_extra": true,
+            "rules": [
+                {
+                    "fee": 6,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥6"
+        },
+        "promotion_info": "",
+        "rating": 4.4,
+        "rating_count": 0,
+        "recent_order_num": 795,
+        "recommend": {
+            "image_hash": "ff085f835038a87ae040a8cd53338f4cjpeg",
+            "reason": "广告",
+            "track": "{\"rankType\":\"8\"}"
+        },
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196247,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"98\": {\"1\": 28, \"0\": 0}, \"20\": {\"1\": 18, \"0\": 0}, \"158\": {\"1\": 58, \"0\": 0}}",
+                "description": "满20减18，满98减28，满158减58",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38472011,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满20减18，满98减28，满158减58",
+                "type": 102
+            },
+            {
+                "description": "变着花样只为您",
+                "icon_color": "f07373",
+                "icon_name": "特",
+                "id": 35861820,
+                "name": "变着花样只为您",
+                "tips": "变着花样只为您"
+            },
+            {
+                "description": "打折扣啦啦啦啦",
+                "icon_color": "f07373",
+                "icon_name": "特",
+                "id": 35861725,
+                "name": "打折扣啦啦啦啦",
+                "tips": "打折扣啦啦啦啦"
+            }
+        ],
+        "address": "北京市朝阳区百子湾西里104号楼1层102",
+        "authentic_id": 8361267127317211,
+        "description": "金川传统参鸡汤是人参+ 药材+鸡汤的完美结合； 我们遵循药食同源的理念，秉承无添加剂纯天然的精神，小火熬制全天二十四小时不间断，在保证参鸡汤原汁原味的基础上为您私人定制； 我们全天候营业，你不睡我不睡，全城配送。 由于每天排名不一样，请您按右上角五角星，收藏本店，方便您下次",
+        "distance": 550,
+        "favored": false,
+        "float_delivery_fee": 10,
+        "float_minimum_order_amount": 48,
+        "id": 156431811,
+        "image_path": "eef5ad24ff6c848321270aec6f9de74apng",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.89361,
+        "longitude": 116.49738,
+        "max_applied_quantity_per_order": -1,
+        "name": "金川参鸡汤（百子湾店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "00:00/24:00"
+        ],
+        "order_lead_time": 22,
+        "phone": "13691212657",
+        "piecewise_agent_fee": {
+            "description": "配送费¥10",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 10,
+                    "price": 48
+                }
+            ],
+            "tips": "配送费¥10"
+        },
+        "promotion_info": "本店提供正规机打发票",
+        "rating": 5,
+        "rating_count": 0,
+        "recent_order_num": 34,
+        "recommend": {
+            "image_hash": "ff085f835038a87ae040a8cd53338f4cjpeg",
+            "track": "{\"rankType\":\"6\"}"
+        },
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "该商家支持开发票，开票订单金额100.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196980,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "description": "咖喱&照烧，双鸡套餐下单立减24元",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 36070408,
+                "name": "咖喱&照烧，双鸡套餐下单立减24元",
+                "tips": "咖喱&照烧，双鸡套餐下单立减24元"
+            },
+            {
+                "description": "吉野家双人套餐，下单立减39元",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 36070101,
+                "name": "吉野家双人套餐，下单立减39元",
+                "tips": "吉野家双人套餐，下单立减39元"
+            },
+            {
+                "description": "吉野家黑胶鸡排单人套餐  五折！",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 36068834,
+                "name": "吉野家黑胶鸡排单人套餐  五折！",
+                "tips": "吉野家黑胶鸡排单人套餐  五折！"
+            },
+            {
+                "description": "吉野家双人优惠餐75折",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 26311779,
+                "name": "吉野家双人优惠餐75折",
+                "tips": "吉野家双人优惠餐75折"
+            },
+            {
+                "description": "吉野家双人超值餐下单立减16.5元",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 26311502,
+                "name": "吉野家双人超值餐下单立减16.5元",
+                "tips": "吉野家双人超值餐下单立减16.5元"
+            }
+        ],
+        "address": "北京市朝阳区百子湾路16号百子园B区会所17号楼118号一层A1、二层B2区域",
+        "authentic_id": 6391297147680839,
+        "average_cost": "¥30/人",
+        "description": "欢迎光临！",
+        "distance": 1180,
+        "favored": false,
+        "float_delivery_fee": 7,
+        "float_minimum_order_amount": 0,
+        "id": 406939,
+        "image_path": "9da99e61b6978553324d485a70c67ebapng",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.9000438085596,
+        "longitude": 116.484375406435,
+        "max_applied_quantity_per_order": -1,
+        "name": "吉野家(百子湾MINI店)",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/21:00"
+        ],
+        "order_lead_time": 57,
+        "phone": "4008197197",
+        "piecewise_agent_fee": {
+            "description": "配送费¥7",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 7,
+                    "price": 0
+                }
+            ],
+            "tips": "配送费¥7"
+        },
+        "promotion_info": "本店只提供电子发票，请您按照收银条指引自行开票，谢谢。",
+        "rating": 4.7,
+        "rating_count": 0,
+        "recent_order_num": 3086,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196980,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"40\": {\"1\": 25, \"0\": 0}, \"80\": {\"1\": 50, \"0\": 0}}",
+                "description": "满40减25，满80减50",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 37596723,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满40减25，满80减50",
+                "type": 102
+            },
+            {
+                "description": "9.9特价套餐管饱！！",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 38206518,
+                "name": "9.9特价套餐管饱！！",
+                "tips": "9.9特价套餐管饱！！"
+            },
+            {
+                "description": "9.9抢购美味套餐！！",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37803790,
+                "name": "9.9抢购美味套餐！！",
+                "tips": "9.9抢购美味套餐！！"
+            },
+            {
+                "description": "19.9元单人套餐~好多肉",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37800100,
+                "name": "19.9元单人套餐~好多肉",
+                "tips": "19.9元单人套餐~好多肉"
+            },
+            {
+                "description": "超值五折套餐",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 37799724,
+                "name": "超值五折套餐",
+                "tips": "超值五折套餐"
+            },
+            {
+                "description": "19.9",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 26911331,
+                "name": "19.9",
+                "tips": "19.9"
+            },
+            {
+                "description": "9.9",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 26910329,
+                "name": "9.9",
+                "tips": "9.9"
+            },
+            {
+                "description": "5",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 26909570,
+                "name": "5",
+                "tips": "5"
+            },
+            {
+                "description": "6",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 26907183,
+                "name": "6",
+                "tips": "6"
+            }
+        ],
+        "address": "北京市朝阳区东四环中路80号楼2层2a08",
+        "authentic_id": 7371237133813140,
+        "average_cost": "¥16/人",
+        "delivery_mode": {
+            "color": "2395FF",
+            "gradient": {
+                "rgb_from": "00AAFF",
+                "rgb_to": "0085FF"
+            },
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "description": "",
+        "distance": 570,
+        "favored": false,
+        "float_delivery_fee": 3,
+        "float_minimum_order_amount": 20,
+        "folding_restaurant_brand": "卖虾便当",
+        "folding_restaurants": [
+            {
+                "distance": 15001,
+                "id": 1262593,
+                "name": "卖虾小龙虾海鲜外卖店",
+                "order_lead_time": 49,
+                "type": 0
+            }
+        ],
+        "id": 1479140,
+        "image_path": "02be3ac0cc0176bbcfbde499ce308eb3png",
+        "is_new": false,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.89964,
+        "longitude": 116.49154,
+        "max_applied_quantity_per_order": -1,
+        "name": "卖虾便当（大成国际店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "10:00/22:00"
+        ],
+        "order_lead_time": 23,
+        "phone": "13683345009 13683345009",
+        "piecewise_agent_fee": {
+            "description": "配送费¥3",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 3,
+                    "price": 20
+                }
+            ],
+            "tips": "配送费¥3"
+        },
+        "promotion_info": "",
+        "rating": 4.6,
+        "rating_count": 0,
+        "recent_order_num": 2676,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保"
+            },
+            {
+                "description": "该商家支持开发票，开票订单金额100.0元起，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票"
+            }
+        ],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "17.0",
+                "description": "新用户下单立减17.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 36196371,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减17.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"60\": {\"1\": 20, \"0\": 0}, \"30\": {\"1\": 15, \"0\": 0}}",
+                "description": "满30减15，满60减20",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 35840350,
+                "is_exclusive_with_food_activity": true,
+                "name": "满减优惠",
+                "tips": "满30减15，满60减20",
+                "type": 102
+            },
+            {
+                "description": "超级榴莲比萨套餐特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37313199,
+                "name": "超级榴莲比萨套餐特惠",
+                "tips": "超级榴莲比萨套餐特惠"
+            },
+            {
+                "description": "榴莲比萨套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 37313077,
+                "name": "榴莲比萨套餐",
+                "tips": "榴莲比萨套餐"
+            },
+            {
+                "description": "5折特惠",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 36074325,
+                "name": "5折特惠",
+                "tips": "5折特惠"
+            },
+            {
+                "description": "12寸比萨72元特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35792687,
+                "name": "12寸比萨72元特惠",
+                "tips": "12寸比萨72元特惠"
+            },
+            {
+                "description": "比萨48元特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35791103,
+                "name": "比萨48元特惠",
+                "tips": "比萨48元特惠"
+            },
+            {
+                "description": "12寸榴莲比萨89元特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35790474,
+                "name": "12寸榴莲比萨89元特惠",
+                "tips": "12寸榴莲比萨89元特惠"
+            },
+            {
+                "description": "10寸超级榴莲比萨69元特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35789678,
+                "name": "10寸超级榴莲比萨69元特惠",
+                "tips": "10寸超级榴莲比萨69元特惠"
+            },
+            {
+                "description": "10寸榴莲比萨59元特惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 35789213,
+                "name": "10寸榴莲比萨59元特惠",
+                "tips": "10寸榴莲比萨59元特惠"
+            },
+            {
+                "description": "榴莲比萨套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 34124891,
+                "name": "榴莲比萨套餐",
+                "tips": "榴莲比萨套餐"
+            },
+            {
+                "description": "双人套餐56元",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 34124740,
+                "name": "双人套餐56元",
+                "tips": "双人套餐56元"
+            },
+            {
+                "description": "116元豪华榴莲套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32240470,
+                "name": "116元豪华榴莲套餐",
+                "tips": "116元豪华榴莲套餐"
+            },
+            {
+                "description": "七五折特惠",
+                "icon_color": "f07373",
+                "icon_name": "折",
+                "id": 32237808,
+                "name": "七五折特惠",
+                "tips": "七五折特惠"
+            },
+            {
+                "description": "榴莲套餐优惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32219910,
+                "name": "榴莲套餐优惠",
+                "tips": "榴莲套餐优惠"
+            },
+            {
+                "description": "榴莲套餐优惠",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32219853,
+                "name": "榴莲套餐优惠",
+                "tips": "榴莲套餐优惠"
+            },
+            {
+                "description": "98元巨无霸套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32073961,
+                "name": "98元巨无霸套餐",
+                "tips": "98元巨无霸套餐"
+            },
+            {
+                "description": "78元经典超值套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 32070788,
+                "name": "78元经典超值套餐",
+                "tips": "78元经典超值套餐"
+            },
+            {
+                "description": "68元经典套餐",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 31702331,
+                "name": "68元经典套餐",
+                "tips": "68元经典套餐"
+            },
+            {
+                "description": "56元特价",
+                "icon_color": "f1884f",
+                "icon_name": "特",
+                "id": 31698959,
+                "name": "56元特价",
+                "tips": "56元特价"
+            }
+        ],
+        "address": "北京市朝阳区石门东路广渠东路33号",
+        "authentic_id": 5341247132974596,
+        "average_cost": "¥33/人",
+        "description": "咬上一口，立刻迷上她，尊宝比萨！",
+        "distance": 598,
+        "favored": false,
+        "float_delivery_fee": 4,
+        "float_minimum_order_amount": 30,
+        "id": 50796,
+        "image_path": "0325fbc5eb2ee0814aced3b26c51f499jpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.89782,
+        "longitude": 116.505019,
+        "max_applied_quantity_per_order": -1,
+        "name": "尊宝比萨（百子湾店）",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "09:00/22:00"
+        ],
+        "order_lead_time": 46,
+        "phone": "87215800 87215200",
+        "piecewise_agent_fee": {
+            "description": "配送费¥4",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 4,
+                    "price": 30
+                }
+            ],
+            "tips": "配送费¥4"
+        },
+        "promotion_info": "本店在百子湾，后现代城.均有分店.通过此平台下单，均可快速配送1,套餐选择比萨口味，请在备注中标明，谢谢！2 ,套餐中除榴莲口味比萨，可选任意口味比萨。3，选榴莲口味，则需另加18元，谢谢！",
+        "rating": 4.6,
+        "rating_count": 0,
+        "recent_order_num": 748,
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [],
+        "type": 0
+    },
+    {
+        "activities": [
+            {
+                "attribute": "23.0",
+                "description": "新用户下单立减23.0元",
+                "icon_color": "70bc46",
+                "icon_name": "新",
+                "id": 38281473,
+                "is_exclusive_with_food_activity": true,
+                "name": "新用户立减(不与其他活动共享)",
+                "tips": "新用户下单立减23.0元",
+                "type": 103
+            },
+            {
+                "attribute": "{\"200\": {\"1\": 40, \"0\": 0}, \"100\": {\"1\": 30, \"0\": 0}, \"60\": {\"1\": 15, \"0\": 0}}",
+                "description": "满60减15，满100减30，满200减40",
+                "icon_color": "f07373",
+                "icon_name": "减",
+                "id": 38352884,
+                "is_exclusive_with_food_activity": false,
+                "name": "满减优惠",
+                "tips": "满60减15，满100减30，满200减40",
+                "type": 102
+            },
+            {
+                "description": "5折菜品",
+                "icon_color": "f07373",
+                "icon_name": "特",
+                "id": 38353153,
+                "name": "5折菜品",
+                "tips": "5折菜品"
+            }
+        ],
+        "address": "北京市朝阳区酒仙桥路2号（国营第七九七厂）3-31层",
+        "authentic_id": 6341267146040884,
+        "description": "",
+        "distance": 4316,
+        "favored": false,
+        "float_delivery_fee": 15,
+        "float_minimum_order_amount": 48,
+        "id": 156060384,
+        "image_path": "f96dfe792c0b5fe99f0d14eaec10f248jpeg",
+        "is_new": true,
+        "is_premium": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 39.934738,
+        "longitude": 116.516335,
+        "max_applied_quantity_per_order": -1,
+        "name": "海乐儿挪威三文鱼",
+        "next_business_time": "",
+        "only_use_poi": false,
+        "opening_hours": [
+            "09:00/23:00"
+        ],
+        "order_lead_time": 0,
+        "phone": "15110175667",
+        "piecewise_agent_fee": {
+            "description": "配送费¥15",
+            "extra_fee": 0,
+            "is_extra": false,
+            "rules": [
+                {
+                    "fee": 15,
+                    "price": 48
+                }
+            ],
+            "tips": "配送费¥15"
+        },
+        "promotion_info": "",
+        "rating": 4.4,
+        "rating_count": 0,
+        "recent_order_num": 20,
+        "recommend": {
+            "image_hash": "ff085f835038a87ae040a8cd53338f4cjpeg",
+            "track": "{\"rankType\":\"6\"}"
+        },
+        "regular_customer_count": 0,
+        "status": 1,
+        "supports": [],
+        "type": 0
+    }
+  ]
+}

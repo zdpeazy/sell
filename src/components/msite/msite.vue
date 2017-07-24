@@ -6,6 +6,7 @@
       <div class="split"></div>
       <h3 class="recommend-shop">推荐商家</h3>
       <shoplist :shops="shops" :scroll="scroll"></shoplist>
+      <loadmore v-show="pullup" :loadingHei="loadingHei" :scroll="scroll" :loadText="loadText"></loadmore>
     </div>
     <footerWrapper></footerWrapper>
   </div>
@@ -18,37 +19,63 @@
   import category from '@/components/msite/children/category/category';
   import shoplist from '@/components/common/shoplist/shoplist';
   import {config} from '@/static/js/config';
+  import loadmore from '@/components/common/loadmore/loadmore';
+
   const ERR_OK = 0;
   export default {
     data() {
       return {
+        itemlength: 15,
         shops: [],
         scroll: {},
-        pulldown: true
+        pullup: false,
+        loadingHei: 50,
+        offset: 0,
+        loadText: '正在加载...',
+        scrollY: 0
       };
     },
     created() {
-      this.$http.get(config().URL + '/api/restaurants').then((response) => {
-        response = response.body;
-        if (response.errno === ERR_OK) {
-          this.shops = response.data;
-          // console.log(this.goods);
-          this.$nextTick(() => {
-            this._initScroll();
-          });
-        }
-      });
+      this._getData(0);
     },
     methods: {
       _initScroll() {
         this.scroll = new BScroll(this.$refs.msite, {
-          click: true
+          click: true,
+          probeType: 3
         });
-        this.scroll.on('touchend', (pos) => {
-          // 下拉动作
-          if (pos.y > 50) {
+        this.scroll.on('scroll', (pos) => {
+          this.pullup = true;
+          console.log(this.this.scroll.y);
+          console.log(this.scroll.maxScrollY);
+          if (this.scroll.y < this.scroll.maxScrollY) {
+            this.offset += 15;
+            this._getData(this.offset);
           }
+          // this.scroll.refresh();
         });
+      },
+      _getData(offset) {
+        console.log(this.itemlength);
+        if (this.itemlength !== 0) {
+          this.$http.get(config().URL + '/api/restaurants?offset=' + offset).then((response) => {
+            response = response.body;
+            if (response.errno === ERR_OK) {
+              let arr = response.data;
+              if (arr.length < 15) {
+                this.itemlength = 0;
+              }
+              for (var i = 0; i < arr.length; i++) {
+                this.shops.push(arr[i]);
+              }
+              this.$nextTick(() => {
+                this._initScroll();
+              });
+            }
+          });
+        } else {
+          return;
+        }
       }
     },
     components: {
@@ -56,7 +83,8 @@
       headerWrapper,
       category,
       shoplist,
-      BScroll
+      BScroll,
+      loadmore
     }
   };
 </script>

@@ -23,8 +23,16 @@ var appData = require("./category.json");
 var category = appData.category;
 
 var appData = require("./index.json");
-var restaurants = appData.restaurants;
+var restaurants1 = appData.restaurants;
 
+var appData = require("./index2.json");
+var restaurants2 = appData.restaurants;
+
+var appData = require("./index3.json");
+var restaurants3 = appData.restaurants;
+
+var appData = require("./index4.json");
+var restaurants4 = appData.restaurants;
 
 var apiRoutes = express.Router();
 
@@ -36,12 +44,30 @@ apiRoutes.get('/category',function(req, res) {
 })
 
 apiRoutes.get('/restaurants',function(req, res) {
-  res.json({
-    errno: 0,
-    data: restaurants 
-  }) 
+  var offset = req.query.offset;
+  if (offset == 0) {
+    res.json({
+      errno: 0,
+      data: restaurants1 
+    }) 
+  } else if (offset == 15) {
+    res.json({
+      errno: 0,
+      data: restaurants2 
+    })
+  } else if (offset == 30) {
+    res.json({
+      errno: 0,
+      data: restaurants3 
+    })
+  } else if (offset == 45) {
+    res.json({
+      errno: 0,
+      data: restaurants4 
+    })
+  }
+  
 })
-
 
 apiRoutes.get('/seller',function(req, res) {
   res.json({
