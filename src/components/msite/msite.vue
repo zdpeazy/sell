@@ -6,7 +6,7 @@
       <div class="split"></div>
       <h3 class="recommend-shop">推荐商家</h3>
       <shoplist :shops="shops" :scroll="scroll"></shoplist>
-      <loadmore v-show="pullup" :loadingHei="loadingHei" :scroll="scroll" :loadText="loadText"></loadmore>
+      <loadmore :pullup="pullup" :loadingHei="loadingHei" :scroll="scroll" :loadText="loadText"></loadmore>
     </div>
     <footerWrapper></footerWrapper>
   </div>
@@ -28,15 +28,25 @@
         itemlength: 15,
         shops: [],
         scroll: {},
-        pullup: false,
+        pullup: true,
         loadingHei: 50,
-        offset: 0,
+        setTimer: {},
+        offset: 15,
         loadText: '正在加载...',
         scrollY: 0
       };
     },
     created() {
-      this._getData(0);
+      this.$http.get(config().URL + '/api/restaurants?offset=0').then((response) => {
+        response = response.body;
+        if (response.errno === ERR_OK) {
+          this.shops = response.data;
+          this.$nextTick(() => {
+            this._initScroll();
+            this._loadingdata();
+          });
+        }
+      });
     },
     methods: {
       _initScroll() {
@@ -44,36 +54,36 @@
           click: true,
           probeType: 3
         });
-        this.scroll.on('scroll', (pos) => {
-          this.pullup = true;
-          console.log(this.this.scroll.y);
-          console.log(this.scroll.maxScrollY);
-          if (this.scroll.y < this.scroll.maxScrollY) {
-            this.offset += 15;
+      },
+      _loadingdata() {
+        this.scroll.on('scrollEnd', (pos) => {
+          if (this.scroll.y <= this.scroll.maxScrollY) {
             this._getData(this.offset);
           }
-          // this.scroll.refresh();
         });
       },
       _getData(offset) {
-        console.log(this.itemlength);
         if (this.itemlength !== 0) {
           this.$http.get(config().URL + '/api/restaurants?offset=' + offset).then((response) => {
             response = response.body;
+            this.offset += 15;
             if (response.errno === ERR_OK) {
               let arr = response.data;
-              if (arr.length < 15) {
+              if (arr.length < this.itemlength) {
                 this.itemlength = 0;
               }
               for (var i = 0; i < arr.length; i++) {
                 this.shops.push(arr[i]);
               }
-              this.$nextTick(() => {
-                this._initScroll();
-              });
             }
+            this.$nextTick(() => { // 数据变化的时候滑动组件更新一定要放到这个里面
+              this.scroll.refresh();
+            });
           });
         } else {
+          this.pullup = false;
+          this.loadText = '没有更多啦~~';
+          this.scroll.refresh();
           return;
         }
       }
