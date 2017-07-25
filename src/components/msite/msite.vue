@@ -1,6 +1,7 @@
 <template>
   <div class="msite" ref="msite">
     <div>
+      <div v-show="pulldown" style="height:50px;width:100%;text-align: center;line-height:50px;background:#ccc;">下拉加载</div>
       <headerWrapper></headerWrapper>
       <category></category>
       <div class="split"></div>
@@ -25,10 +26,11 @@
   export default {
     data() {
       return {
-        itemlength: 15,
+        itemlength: 20, // 每组有多少的元素
         shops: [],
         scroll: {},
         pullup: true,
+        pulldown: false,
         loadingHei: 50,
         setTimer: {},
         offset: 15,
@@ -37,28 +39,33 @@
       };
     },
     created() {
-      this.$http.get(config().URL + '/api/restaurants?offset=0').then((response) => {
-        response = response.body;
-        if (response.errno === ERR_OK) {
-          this.shops = response.data;
-          this.$nextTick(() => {
-            this._initScroll();
-            this._loadingdata();
-          });
-        }
-      });
+      this._initData();
     },
     methods: {
       _initScroll() {
         this.scroll = new BScroll(this.$refs.msite, {
           click: true,
-          probeType: 3
+          probeType: 3,
+          startY: 0
+        });
+      },
+      _initData() {
+        this.$http.get(config().URL + '/api/restaurants?offset=0').then((response) => {
+          response = response.body;
+          if (response.errno === ERR_OK) {
+            this.shops = response.data;
+            this.$nextTick(() => {
+              this._initScroll();
+              this._loadingdata();
+            });
+          }
         });
       },
       _loadingdata() {
         this.scroll.on('scrollEnd', (pos) => {
           if (this.scroll.y <= this.scroll.maxScrollY) {
             this._getData(this.offset);
+            return;
           }
         });
       },
